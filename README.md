@@ -1,4 +1,4 @@
-# codeforces_supercharger
+# codeforces-supercharger
 Tools for automating codeforces example pretests.
 
 ### What is this?
