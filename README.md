@@ -3,7 +3,7 @@ Tools for automating codeforces example pretests.
 
 ### What is this?
 This repository was made to be a collection of useful scripts for usage during/after codeforces competitions.
-It was made for my personal use, but if whoever stumbles upon this finds this useful, you may use it freely.
+It was made for my personal use, but if whoever stumbles upon this finds this useful, they may use it freely.
 
 ### Overview
 This repository consists of one python module, two python scripts, and one bash script.
