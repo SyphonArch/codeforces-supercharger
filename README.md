@@ -3,6 +3,7 @@ Tools for automating codeforces example pretests.
 
 ### What is this?
 This repository was made to be a collection of useful scripts for usage during/after codeforces competitions.
+The main function is a crawler which automatically fetches all example input/ouput of a contest.
 It was made for my personal use, but if whoever stumbles upon this finds this useful, they may use it freely.
 
 ### Overview
