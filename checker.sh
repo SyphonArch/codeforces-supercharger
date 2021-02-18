@@ -16,6 +16,7 @@ then
     ./${FILENAME} < ./ex_io/${FILENAME}_in.txt > ./output/${FILENAME}.txt
 else
     echo "Unsupported file extension!"
+    exit 1
 fi
 fi
 fi
