@@ -38,7 +38,7 @@ while [ -f ./ex_io/${FILENAME}_in_${EX_NUM}.txt ]; do
     ((EX_NUM=EX_NUM+1))
 done
 echo ""
-echo "------ COMM RESULTS ------"
+echo "------ DIFF RESULTS ------"
 EX_NUM=0
 while [ -f ./ex_io/${FILENAME}_in_${EX_NUM}.txt ]; do
     echo "-EX ${EX_NUM}----->"
