@@ -14,6 +14,8 @@ This repository consists of one python module, two python scripts, and one bash 
 - `review_template.py` is for creating a html template for my contest review posts - this is for my personal use.
 
 ### How to supercharge your contests
+0. Edit `ex_fetcher.py`, changing the variable `contest_no` to the appropriate value.  
+This value should be set to equal the value in the contest URL, e.g. 1492 for 'http://codeforces.com/contests/1492'.
 1. Run `ex_fetcher.py`.  
 As the code can only crawl the problems after the contest has started, you can give a time delay in seconds to the script to delay its execution.
 For example, you can do `python3 ex_fetcher.py 10` to give a 10 second delay.  
