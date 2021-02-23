@@ -6,6 +6,10 @@ from bs4 import BeautifulSoup
 from sys import argv
 from time import sleep
 
+# Setup START
+contest_no = 1492
+# Setup END
+
 if len(argv) > 1:
     delay = int(argv[1])
     print(f"Sleeping {delay} seconds...")
@@ -13,7 +17,7 @@ if len(argv) > 1:
 
 
 print('\nFetching problem metadata...\n')
-problems = fetch_problems(1486)
+problems = fetch_problems(contest_no)
 
 dir_name = 'ex_io'
 if not os.path.isdir(f'./{dir_name}'):
