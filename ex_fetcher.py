@@ -33,11 +33,17 @@ for problem in problems:
     html = requests.get(link)
     soup = BeautifulSoup(html.text, 'html.parser')
     io_content = soup.find_all('pre')
-    if len(io_content) == 2:
-        ex_input = io_content[0].text[1:]
-        ex_output = io_content[1].text[1:]
-    with open(f"./{dir_name}/{number}_in.txt", 'w') as f:
-        f.write(ex_input)
-    with open(f"./{dir_name}/{number}_out.txt", 'w') as f:
-        f.write(ex_output)
-    print(' - Done')
+    if len(io_content) % 2 == 0:
+        for i, content in enumerate(io_content):
+            ex_num = i // 2
+            if i % 2 == 0:
+                ex_input = content.text[1:]
+                with open(f"./{dir_name}/{number}_in_{ex_num}.txt", 'w') as f:
+                    f.write(ex_input)
+            else:
+                ex_output = content.text[1:]
+                with open(f"./{dir_name}/{number}_out_{ex_num}.txt", 'w') as f:
+                    f.write(ex_output)
+        print(' - Done')
+    else:
+        print(' - ERROR')
